@@ -1,0 +1,18 @@
+h2 {
+  margin-top: 0;
+}
+container {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #e41212;
+  padding: 15px;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 15px;
+  background-color: #0fe77b;
+}

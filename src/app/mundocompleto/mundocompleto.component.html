@@ -1,0 +1,14 @@
+<div>
+  <h1>Seleccione un pais o contienete por favor</h1>
+  <select(change)="SeleccionePaisocontienete($event.target.value)">
+       <option>**ngFor="let pais of contiente" [value]="pais"{{pais.name.common}}</option>
+  </select>
+
+<div *ngIf="paisOcontieneteSeleccionado ">
+  <h2>Detalles del pais</h2>
+  <p><strong>Nombre:</strong>{{paisSeleccionado.name.common}}</p>
+  <p><strong>Region/Capital:</strong>{{paisSeleccionado.region.common}}</p>
+  <p><strong>Moneda:</strong>{{paisSeleccionado.money.common}}</p>
+  <p><strong>Habitantes:</strong>{{paisSeleccionado.poblation}}</p>
+</div>
+</div>
